@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -74,6 +73,7 @@ const teamMembers = [
     image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952",
     social: {
       linkedin: "https://linkedin.com",
+      github: "https://github.com",
       email: "john@example.com"
     }
   },
@@ -84,6 +84,7 @@ const teamMembers = [
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     social: {
       linkedin: "https://linkedin.com",
+      github: "https://github.com",
       email: "sarah@example.com"
     }
   },
@@ -94,6 +95,7 @@ const teamMembers = [
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     social: {
       linkedin: "https://linkedin.com",
+      github: "https://github.com",
       email: "michael@example.com"
     }
   }
