@@ -36,11 +36,22 @@ export const Navbar = () => {
   );
 };
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a
-    href={href}
-    className="text-primary hover:text-secondary transition-colors font-medium"
-  >
-    {children}
-  </a>
-);
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  return (
+    <a
+      href={href}
+      onClick={handleClick}
+      className="text-primary hover:text-secondary transition-colors font-medium"
+    >
+      {children}
+    </a>
+  );
+};
